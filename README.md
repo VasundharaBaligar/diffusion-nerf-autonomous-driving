@@ -105,7 +105,7 @@ ns-render interpolate --load-config ./nerf_output/**/config.yml \
 - Detects: cars, trucks, buses, motorcycles, pedestrians
 
 ### NeRF Training
-- **20,000 iterations** on NVIDIA A100 (~40 mins)
+- **20,000 iterations** on NVIDIA A100
 - Clean novel view synthesis with no dynamic object ghosting
 
 ### Diffusion Inpainting
@@ -132,31 +132,6 @@ diffusion-nerf-autonomous-driving/
 │   └── pipeline.ipynb       # Full Colab notebook
 └── README.md
 ```
-
----
-
-## 🔑 Key Design Decisions
-
-**Why remove dynamic objects before NeRF?**
-NeRF models the world as a static radiance field. Moving objects across frames create inconsistencies that manifest as blurring and ghosting in the 3D reconstruction. Removing them produces a clean, accurate base map.
-
-**Why diffusion inpainting over simple interpolation?**
-Simple interpolation creates visible seams and artifacts. Stable Diffusion understands scene context (road texture, lane markings, lighting) and generates photorealistic completions.
-
-**Why Instant-NGP?**
-Trains in minutes instead of hours while maintaining competitive quality — essential for iterative research and practical autonomous driving applications.
-
----
-
-## 🔮 Future Work
-
-- Extend to **nuScenes** multi-camera setup for 360° reconstruction
-- Add **LiDAR depth supervision** for more accurate NeRF geometry
-- Integrate **sensor fusion** (camera + LiDAR) for better masking
-- Fine-tune diffusion model on driving-specific data
-- Real-time pipeline optimization for onboard deployment
-
----
 
 ## 📚 References
 
