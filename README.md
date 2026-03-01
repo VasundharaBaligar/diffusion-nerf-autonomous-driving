@@ -8,9 +8,10 @@ A full end-to-end pipeline for **clean 3D scene reconstruction** from driving fo
 
 ---
 ### Before/After Comparison (Original → Mask → Inpainted)
-comparison_v2.mp4
+![Comparison](comparison.gif)
+
 ### NeRF Novel View Synthesis
-render_hq.mp4
+![NeRF Render](nerf_render.gif)
 ---
 ## 🎯 Motivation
 
