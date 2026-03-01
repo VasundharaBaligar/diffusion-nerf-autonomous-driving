@@ -115,23 +115,6 @@ ns-render interpolate --load-config ./nerf_output/**/config.yml \
 
 ---
 
-## 🗂️ Project Structure
-
-```
-diffusion-nerf-autonomous-driving/
-├── data/                    # KITTI raw sequences
-├── masks/                   # Binary masks from detection
-├── nerf_input/              # Masked frames for NeRF
-├── inpainted/               # Diffusion-inpainted frames
-├── nerf_output/             # Trained NeRF checkpoints
-├── scripts/
-│   ├── detect_and_mask.py   # MMCV detection pipeline
-│   ├── inpaint.py           # Stable Diffusion inpainting
-│   └── render.py            # NeRF novel view rendering
-├── notebooks/
-│   └── pipeline.ipynb       # Full Colab notebook
-└── README.md
-```
 
 ## 📚 References
 
