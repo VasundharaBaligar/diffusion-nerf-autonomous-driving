@@ -8,11 +8,9 @@ A full end-to-end pipeline for **clean 3D scene reconstruction** from driving fo
 
 ---
 ### Before/After Comparison (Original → Mask → Inpainted)
-https://github.com/VasundharaBaligar/diffusion-nerf-autonomous-driving/blob/main/comparison_v2.mp4
-
+comparison_v2.mp4
 ### NeRF Novel View Synthesis
-https://github.com/VasundharaBaligar/diffusion-nerf-autonomous-driving/blob/main/render_hq.mp4
-
+render_hq.mp4
 ---
 ## 🎯 Motivation
 
