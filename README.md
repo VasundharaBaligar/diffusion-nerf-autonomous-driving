@@ -7,7 +7,13 @@ A full end-to-end pipeline for **clean 3D scene reconstruction** from driving fo
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-red)
 
 ---
+### Before/After Comparison (Original → Mask → Inpainted)
+https://github.com/VasundharaBaligar/diffusion-nerf-autonomous-driving/blob/main/comparison_v2.mp4
 
+### NeRF Novel View Synthesis
+https://github.com/VasundharaBaligar/diffusion-nerf-autonomous-driving/blob/main/render_hq.mp4
+
+---
 ## 🎯 Motivation
 
 Neural Radiance Fields (NeRF) assume a **static world** — but real driving scenes contain dynamic objects (cars, pedestrians) that move between frames, causing ghosting and blurring in 3D reconstruction.
